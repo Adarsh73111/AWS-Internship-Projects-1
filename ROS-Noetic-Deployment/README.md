@@ -15,7 +15,7 @@ This project demonstrates deploying **ROS Noetic** on an **AWS EC2 instance** ru
 | Component        | Configuration              |
 |-----------------|----------------------------|
 | Cloud Provider  | Amazon Web Services (AWS)  |
-| Instance Type   | t2.micro (Free Tier)       |
+| Instance Type   | t3.micro (Free Tier)       |
 | OS / AMI        | Ubuntu Server 20.04 LTS    |
 | Storage         | 30 GB (gp2)                |
 | Region          | ap-south-1 (Mumbai)        |
@@ -53,7 +53,7 @@ This project demonstrates deploying **ROS Noetic** on an **AWS EC2 instance** ru
 ### Step 2 — Connect via SSH
 ```bash
 chmod 400 ros-key.pem
-ssh -i "ros-key.pem" ubuntu@<YOUR-EC2-PUBLIC-IP>
+ssh -i "Linux-Key-Pair.pem" ubuntu@ip-172-31-37-22
 ```
 
 ---
@@ -100,6 +100,26 @@ roscore
 
 ---
 
+## 📸 Screenshots
+
+### 1️⃣ EC2 Instance Running on AWS Console
+<!-- Upload your EC2 console screenshot and replace the filename below -->
+![EC2 Instance](https://github.com/Adarsh73111/AWS-Projects/blob/main/ROS-Noetic-Deployment/Screenshot%202026-03-11%20214912.png)
+
+---
+
+### 2️⃣ ROS Noetic Successfully Installed
+<!-- Upload your terminal showing rosversion -d output and replace the filename below -->
+![ROS Installed](https://github.com/Adarsh73111/AWS-Projects/blob/main/ROS-Noetic-Deployment/Screenshot%202026-03-11%20215244.png)
+
+---
+
+### 3️⃣ roscore Running on Cloud
+<!-- Upload your terminal showing roscore running output and replace the filename below -->
+![ROS Core Running](https://github.com/Adarsh73111/AWS-Projects/blob/main/ROS-Noetic-Deployment/Screenshot%202026-03-11%20215537.png)
+
+---
+
 ## ✅ Successful Output
 
 ```
@@ -130,9 +150,12 @@ started core service [/rosout]
 ```
 ROS-Noetic-Deployment/
 │
-├── README.md          # Project documentation
-├── install.sh         # Automated installation script
-└── screenshots/       # Proof of working deployment
+├── README.md              # Project documentation
+├── install.sh             # Automated installation script
+└── screenshots/           # Proof of working deployment
+    ├── ec2-instance.png
+    ├── ros-installed.png
+    └── roscore-running.png
 ```
 
 ---
