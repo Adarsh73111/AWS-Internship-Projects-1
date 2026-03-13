@@ -183,7 +183,7 @@ chmod +x install.sh
 ## ⚠️ Cost Management Tips
 
 - Always **Stop** your EC2 instance when not in use
-- t2.micro is **free for 750 hours/month** (12 months)
+- t3.micro is **free for 750 hours/month** (12 months)
 - Set up AWS Billing Alerts to avoid unexpected charges
 
 ---
